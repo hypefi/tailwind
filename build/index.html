@@ -6,8 +6,10 @@
     <link rel="stylesheet" href="styles.css">
    <link rel="stylesheet" href="style.css">
     <title>Tailwind CSS Demo</title>
-    <script src="index.js" ></script>
-  </head>
+    <script src="index.js" type="module"></script>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+</head>
 <!-- This example requires Tailwind CSS v2.0+ -->
 <div class="relative bg-white">
   <div class="max-w-7xl mx-auto px-4 sm:px-6">
@@ -30,7 +32,7 @@
       <nav class="hidden md:flex space-x-10">
         <div class="relative">
           <!-- Item active: "text-gray-900", Item inactive: "text-gray-500" -->
-          <button id="button1" type="button" class="group bg-white rounded-md text-gray-500 inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" onmouseover="navToggle();" >
+          <button id="button1" type="button" class="group bg-white rounded-md text-gray-500 inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" >
             <span>Solutions</span>
             <!--
               Heroicon name: chevron-down
@@ -165,7 +167,7 @@
 
         <div class="relative">
           <!-- Item active: "text-gray-900", Item inactive: "text-gray-500" -->
-          <button type="button" class="group bg-white rounded-md text-gray-500 inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+          <button id="button2" type="button" class="group bg-white rounded-md text-gray-500 inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
             <span>More</span>
             <!--
               Heroicon name: chevron-down
@@ -187,7 +189,7 @@
               From: "opacity-100 translate-y-0"
               To: "opacity-0 translate-y-1"
           -->
-          <div class="absolute left-1/2 transform -translate-x-1/2 mt-3 px-2 w-screen max-w-md sm:px-0">
+          <div id="flyout2" class="absolute left-1/2 transform -translate-x-1/2 mt-3 px-2 w-screen max-w-md sm:px-0">
             <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
               <div class="z-20 relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
                 <a href="#" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
