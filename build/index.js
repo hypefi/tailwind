@@ -28,6 +28,8 @@ $( "#button1" ).mouseleave(() => setTimeout(function() {
 $("#button2").hover(()=> {      $("#flyout2").css('visibility','visible'); $("#flyout2").fadeIn( 100 )});
 //$("#flyout2").hover(()=> {   $("#flyout2").show()}, ()=> $("#flyout2").fadeOut( 500 ));
 $( "#flyout2" ).mouseleave(()=> $("#flyout2").fadeOut( 500 ))
+
+
 $( "#button2" ).mouseleave(() => setTimeout(function() {
         $("#flyout2").hide()
     }, 5000));
